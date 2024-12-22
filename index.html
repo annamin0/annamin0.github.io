@@ -12,6 +12,14 @@
     
   </head>
 
+  <style>
+    .responsive-img {
+        width: 100%;       /* 图片宽度占满父容器 */
+        max-width: 600px;  /* 限制图片的最大宽度 */
+        height: auto;      /* 按比例缩放 */
+    }
+</style>
+
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -69,6 +77,87 @@
           </tbody></table>
 
 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="camp_stop()" onmouseover="camp_start()">
+              <td style="padding:20px;width:45%;vertical-align:middle">
+                <div class="one">
+                  <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images/camp.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div> -->
+                  <img src='images/paper/slinthewild.jpg' class="responsive-img">
+                </div>
+              </td>
+              <td style="padding:20px;width:55%;vertical-align:middle">
+                <!-- <p> -->
+                  <span class="papertitle">Supervising Sound Localization Using In-the-wild Ego-motion</span>
+                <!-- </p> -->
+                <br>
+                <strong>Anna Min</strong>,
+                <a href="https://ificl.github.io/">Ziyang Chen</a>,
+                <a href="https://hangzhaomit.github.io/">Hang Zhao</a>,
+                <a href="https://andrewowens.com/">Andrew Owens</a>
+                <br>
+                <em>in submission</em>
+                <br>
+                <p></p>
+                <p>
+                  <!-- Learn spatial sound sources in the wild using ego-motion signals derived from visual cues with limited perspectives. -->
+                   coming soon!
+                </p>
+              </td>
+            </tr>
+
+            
+
+            <tr onmouseout="camp_stop()" onmouseover="camp_start()">
+              <td style="padding:20px;width:45%;vertical-align:middle">
+                <div class="one">
+                  <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images/camp.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div> -->
+                  <img src='images/paper/emotiontransfer.jpg' width="350">
+                </div>
+              </td>
+              <td style="padding:20px;width:55%;vertical-align:middle">
+                <!-- <a href="paper\emotiontransfer.pdf"> -->
+                  <span class="papertitle">A Unit-based System and Dataset for Expressive Direct Speech-to-Speech Translation</span>
+                <!-- </a> -->
+                <br>
+                <strong>Anna Min*</strong>,
+                <a href="https://huchenxucs.github.io/">Chenxu Hu*</a>,
+                <a href="https://rayeren.github.io/">Yi Ren</a>,
+                <a href="https://hangzhaomit.github.io/">Hang Zhao</a>
+                <br>
+                <em>Interspeech2024</em>
+                <br>
+                <br>
+                <p></p>
+                <p>
+                  Propose a dataset and pipeline with aligned bilingual audio tracks sharing similar emotions without using text as an intermediate for lesser-spoken languages and dialects.
+                </p>
+              </td>
+            </tr>
+
+
+
+
+          </tbody></table>
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Side Projects</h2>
+              <p>
+                
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
@@ -197,9 +286,8 @@
                 <h2>Selected Awards</h2>
                 <ul>
                   <li>Tsinghua University Academic Excellence Award (2/103), 2023</li>
-                  <li>Tsinghua University Research Excellence Award (2/103), 2023</li>
+                  <li>Tsinghua University Research Excellence Award (2/103), 2022-2024</li>
                   <li>Spark Innovative Talent Cultivation Program (50/3900 undergraduates in Tsinghua for research performance), 2022</li>
-                  <li>Tsinghua University Research Excellence Award (2/103), 2022</li>
                 </ul>
               </td>
 
@@ -230,7 +318,7 @@
             
 <tr>
   <td align="right">
-    <p>
+    <p id="update-time">
       Last updated Dec. 2023.
     </p>
     <p>
