@@ -14,9 +14,21 @@
 
   <style>
     .responsive-img {
-        width: 100%;       /* 图片宽度占满父容器 */
-        max-width: 600px;  /* 限制图片的最大宽度 */
+        width: 200%;       /* 图片宽度占满父容器 */
         height: auto;      /* 按比例缩放 */
+        object-fit: cover;
+        margin: auto;
+    }
+    .one {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    .img-two {
+      width: 200%;       /* 图片宽度占满父容器 */
+      height: auto;      /* 按比例缩放 */
+      object-fit: cover;
+      margin: auto;
     }
 </style>
 
@@ -34,6 +46,7 @@
 
                 <p>I appreciate the opportunities to work with or learn from all of my kind and amazing collaborators and mentors. I also love generally chatting about research or life with people in different backgrounds. Feel free to reach out for any reason! </p>
 
+                <p>I am applying for a PhD position starting in 2025. Please contact me through email if you are interested in my research!</p>
 
                 <p>Email: anna.min1754@gmail.com</p>
                 <!-- <p>If you want to chat, feel free to schedule a time at https://calendly.com/annamin </p> -->
@@ -43,7 +56,8 @@
                   <!-- <a href="data/info/annamin-20231203-CV.pdf">CV</a> &nbsp;/&nbsp; -->
                   <a href="https://twitter.com/_AnnaMin">Twitter</a> &nbsp;/&nbsp;
                   <a href="https://github.com/yangqing-20/">Github</a>  &nbsp;/&nbsp;
-                  <a href="https://linkedin.com/in/anna-min-a69963263">Linkedin</a>
+                  <a href="https://linkedin.com/in/anna-min-a69963263">Linkedin</a>  &nbsp;/&nbsp;
+                  <a href="images/info/wechat_qr_code.png" target="_blank">Wechat</a>  
                 </p>
               </td>
               <td style="padding:2.5%;width:20%;max-width:20%">
@@ -70,7 +84,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I am broadly interested in multi-modal perception and interactive generation, either machine centered or human centered.
+                  My research lies at the intersection of machine learning, computer vision and signal processing. I am broadly interested in multi-modal perception and interactive generation, either machine centered or human centered. 
                 </p>
               </td>
             </tr>
@@ -80,7 +94,7 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="camp_stop()" onmouseover="camp_start()">
+            <tr onmouseout="camp_stop()" onmouseover="camp_start()" style="height:100%;">
               <td style="padding:20px;width:45%;vertical-align:middle">
                 <div class="one">
                   <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
@@ -119,7 +133,7 @@
                   <source src="images/camp.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div> -->
-                  <img src='images/paper/emotiontransfer.jpg' width="350">
+                  <img src='images/paper/emotiontransfer.png' class="img-two">
                 </div>
               </td>
               <td style="padding:20px;width:55%;vertical-align:middle">
@@ -148,85 +162,8 @@
           </tbody></table>
 
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Side Projects</h2>
-              <p>
-                
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-            <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-              <td style="padding:20px;width:45%;vertical-align:middle">
-                <div class="one">
-                  <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/camp.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div> -->
-                  <!-- <img src='images/paper/slinthewild.jpg' width="350"> -->
-                </div>
-              </td>
-              <td style="padding:20px;width:55%;vertical-align:middle">
-                <!-- <p> -->
-                  <span class="papertitle">Supervising Sound Localization Using In-the-wild Ego-motion</span>
-                <!-- </p> -->
-                <br>
-                <strong>Anna Min</strong>,
-                <a href="https://ificl.github.io/">Ziyang Chen</a>,
-                <a href="https://hangzhaomit.github.io/">Hang Zhao</a>,
-                <a href="https://andrewowens.com/">Andrew Owens</a>
-                <br>
-                <em>in submission</em>
-                <br>
-                <p></p>
-                <p>
-                  <!-- Learn spatial sound sources in the wild using ego-motion signals derived from visual cues with limited perspectives. -->
-                   coming soon!
-                </p>
-              </td>
-            </tr>
-
-            
-
-            <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-              <td style="padding:20px;width:45%;vertical-align:middle">
-                <div class="one">
-                  <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/camp.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div> -->
-                  <img src='images/paper/emotiontransfer.jpg' width="350">
-                </div>
-              </td>
-              <td style="padding:20px;width:55%;vertical-align:middle">
-                <!-- <a href="paper\emotiontransfer.pdf"> -->
-                  <span class="papertitle">A Unit-based System and Dataset for Expressive Direct Speech-to-Speech Translation</span>
-                <!-- </a> -->
-                <br>
-                <strong>Anna Min*</strong>,
-                <a href="https://huchenxucs.github.io/">Chenxu Hu*</a>,
-                <a href="https://rayeren.github.io/">Yi Ren</a>,
-                <a href="https://hangzhaomit.github.io/">Hang Zhao</a>
-                <br>
-                <em>Interspeech2024</em>
-                <br>
-                <br>
-                <p></p>
-                <p>
-                  Propose a dataset and pipeline with aligned bilingual audio tracks sharing similar emotions without using text as an intermediate for lesser-spoken languages and dialects.
-                </p>
-              </td>
-            </tr>
 
 
-
-
-          </tbody></table>
 
           <br><br>
           <br><br>
@@ -280,6 +217,8 @@
             </tbody>
           </table> -->
 
+
+          
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
@@ -299,17 +238,57 @@
               <td>
                 <h2>Miscellanea</h2>
                 <p>
-                  I'm an amateur illustrator passionate about portraiture and landscapes, and a piano player, currently intrigued by generative models.
+                  I'm an amateur illustrator passionate about portraiture and landscapes, and a piano player, currently intrigued by generative models. I like reading.
                   My Chinese name is pronounced as Ān Nà, which is similar to Anna.
                 </p>
 
 
                 
                 
-              </td>
 
-            </tr>
-          </tbody>
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta name="viewport" content="width=device-width">
+              <title>Unified Format</title>
+              <link id="avast_os_ext_custom_font" href="chrome-extension://mbckjcfnjmoiinpgddefodcighgikkgn/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css">
+            </head>
+            <body>
+              <!-- Section 1: Music Work -->
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tbody>
+                  <tr>
+                    <td>
+                      <!-- <h2>Music and Other Work</h2> -->
+                      
+                      <div style="display: flex; align-items: center;">
+                          <audio controls autoplay loop>
+                              <source src="images/files/spring.wav" type="audio/x-wav">
+                              Your browser does not support the audio element.
+                          </audio>
+                          <p style="margin-left: 20px; flex: 1;">Chilling Spring (A demo composed and written by Anna, performed by Vocaloid)</p>
+                      </div>
+
+                      <div style="display: flex; align-items: center; width: 100%; margin-top: 20px;">
+                        <iframe 
+                            style="width: 40%; height: auto; aspect-ratio: 16 / 9;" 
+                            src="https://www.youtube.com/embed/INSERT_VIDEO_ID_HERE" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                        <p style="margin-left: 20px; flex: 1;">
+                            A Player vs. AI game based on the theme of the movie <em>Song of the Sea</em>. It features multiple character controls, tactical turn-based gameplay, a story mode, and standard modes with varying difficulty levels.
+                        </p>
+                    </div>
+
+                  </td>
+
+                </tr>
+              </tbody>
+    
+              </table>
         
         </table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
@@ -319,7 +298,7 @@
 <tr>
   <td align="right">
     <p id="update-time">
-      Last updated Dec. 2023.
+      Last updated: 2024-12-22 06:46:30 -0800.
     </p>
     <p>
       Template from <a href="https://jonbarron.info/">Jonathan Barron</a>.
