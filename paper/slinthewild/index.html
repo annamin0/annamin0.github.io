@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Images that Sound: Multimodal AI Art">
-  <meta name="keywords" content="AI Art, Generative Model, Audio-Visual Learning">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="description" content="Images that Sound: Multimodal AI Art"> -->
+  <!-- <meta name="keywords" content="AI Art, Generative Model, Audio-Visual Learning"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>Images that Sound</title>
 
   <!-- Google tag (gtag.js) -->
@@ -55,13 +55,15 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-3 publication-title">Images that Sound:<br>Composing Images and Sounds on a Single Canvas</h1>
-            <h2 class="title is-5 publication-title"> NeurIPS 2024 </h2>
+            <h1 class="title is-3 publication-title">Supervising Sound Localization by In-the-wild Egomotion</h1>
+            <h2 class="title is-5 publication-title"> in submission </h2>
             <div class="is-size-5 publication-authors">
+              <span class="author-block" style="margin: 0 1rem;">
+                <a href="https://annamin0.github.io/" target="_blank">Anna Min</a></span>
               <span class="author-block" style="margin: 0 1rem;">
                 <a href="https://ificl.github.io/" target="_blank">Ziyang Chen</a></span>
               <span class="author-block" style="margin: 0 1rem;">
-                <a href="https://dangeng.github.io/" target="_blank">Daniel Geng</a></span>
+                <a href="https://hangzhaomit.github.io/" target="_blank">Hang Zhao</a></span>
               <span class="author-block" style="margin: 0 1rem;">
                 <a href="https://andrewowens.com" target="_blank">Andrew Owens</a></span>
             </div>
@@ -78,7 +80,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2405.12221" target="_blank"
+                  <a href="https://annamin0.github.io/paper/slinthewild_draft" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -87,7 +89,7 @@
                   </a>
                 </span>
                 
-                <!- - arXiv Link. - ->
+                <!-- <!- - arXiv Link. - ->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2405.12221" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -96,7 +98,7 @@
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- Video Link. -->
                 
@@ -111,7 +113,7 @@
                 </span> -->
 
                 <!-- Code Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/IFICL/images-that-sound" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -119,7 +121,7 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
                 
                 <!-- Bibtex. -->
                 <span class="link-block">
@@ -148,7 +150,7 @@
         <!-- First column in its own row -->
         <div class="column is-three-fifths">
           <h3 class="subtitle has-text-centered">
-            <b>tl;dr:</b> We use diffusion models to generate visual spectrograms that look like images but can also be played as sound.
+            <b>tl;dr:</b> Predicting spatial sound localization using camera ego-motion for in-the-wild videos.
           </h3>
         </div>
       </div>
@@ -158,7 +160,7 @@
           <div class="is-centered is-max-desktop teaser">
             <div>
               <video class="center-video" autoplay muted loop playsinline style="margin: 1em auto 0 auto;">
-                <source src="./static/videos/teaser.mp4" type="video/mp4">
+                <img src="./static/images/image.jpg" alt="Image description">
               </video>
               <p style="font-size: 9pt; width: 75%; margin: 0 auto;">
                 Note the above teaser is muted. For examples with sound, please see our <a href="#gallery">gallery</a> below.
@@ -179,15 +181,7 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              Spectrograms are 2D representations of sound that look very different from the images found in our visual world. And
-              natural images, when played as spectrograms, make unnatural sounds. In this paper, we show that it is possible to
-              synthesize spectrograms that simultaneously look like natural images and sound like natural audio. We call these
-              spectrograms <strong>images that sound</strong>. Our approach is simple and zero-shot, and it leverages pre-trained
-              text-to-image and text-to-spectrogram diffusion models that operate in a shared latent space. During the reverse
-              process, we denoise noisy latents with both the audio and image diffusion models in parallel, resulting in a sample that
-              is likely under both models. Through quantitative evaluations and perceptual studies, we find that our method
-              successfully generates spectrograms that align with a desired audio prompt while also taking the visual appearance of a
-              desired image prompt. 
+              We present a method for learning binaural sound localization using egomotion as a supervisory signal. Over the course of a video, the camera's direction to a sound source will change as the camera moves.  We train an audio model to predict sound directions consistent with visual estimates of camera motion, which we obtain using traditional methods from multi-view geometry. This provides a weak but plentiful form of supervision that we combine with traditional binaural cues. To evaluate this method, we propose a dataset of real-world audio-visual videos with egomotion. We show that our model can successfully learn from real-world data and that it performs well on sound localization tasks.
             </p>
             <p>
               We describe our <a href="#method">method</a> in more detail and show examples in our <a href="#gallery">gallery</a> below.
@@ -449,7 +443,7 @@
   </section>
 
 
-  <section class="section" id="BibTeX" style="margin-top: -30px;">
+  <!-- <section class="section" id="BibTeX" style="margin-top: -30px;">
     <div class="container is-max-desktop content">
       <div class="columns is-centered">
         <div class="column is-four-fifths">
@@ -464,7 +458,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <footer class="footer">

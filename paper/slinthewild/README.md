@@ -1,3 +1,3 @@
-# Images that sound
-Project site for Images that Sound: Composing Images and Sounds on a Single Canvas
+# Supervising Sound Localization by In-the-wild Egomotion
 
+Project site for Supervising Sound Localization by In-the-wild Egomotion
