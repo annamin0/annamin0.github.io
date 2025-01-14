@@ -159,12 +159,12 @@
         <div class="column is-four-fifths">
           <div class="is-centered is-max-desktop teaser">
             <div>
-              <video class="center-video" autoplay muted loop playsinline style="margin: 1em auto 0 auto;">
+              <!-- <video class="center-video" autoplay muted loop playsinline style="margin: 1em auto 0 auto;"> -->
                 <img src="./static/images/teaser_one_column.jpg" alt="Image description">
-              </video>
-              <p style="font-size: 9pt; width: 75%; margin: 0 auto;">
+              <!-- </video> -->
+              <!-- <p style="font-size: 9pt; width: 75%; margin: 0 auto;">
                 Note the above teaser is muted. For examples with sound, please see our <a href="#gallery">gallery</a> below.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
               We present a method for learning binaural sound localization using egomotion as a supervisory signal. Over the course of a video, the camera's direction to a sound source will change as the camera moves.  We train an audio model to predict sound directions consistent with visual estimates of camera motion, which we obtain using traditional methods from multi-view geometry. This provides a weak but plentiful form of supervision that we combine with traditional binaural cues. To evaluate this method, we propose a dataset of real-world audio-visual videos with egomotion. We show that our model can successfully learn from real-world data and that it performs well on sound localization tasks.
             </p>
             <p>
-              We describe our <a href="#method">method</a> in more detail and show examples in our <a href="#gallery">gallery</a> below.
+              We describe our <a href="#method">method</a> in more detail.
             </p>
           </div>
         </div>
@@ -205,27 +205,21 @@
               <img src="./static/images/method_1.jpg" class="center-img" style="max-width: 650px; margin-bottom: 30px;"/>
 
             <p>
-              We pose the problem of generating <em>images that sound</em> as a multimodal composition problem:
-              our goal is to obtain a sample that is likely under both the distribution of images and the distribution of spectrograms.
-              To do this, we simultaneously denoise using an image diffusion model and an audio diffusion model.
-              Given a noisy latent \(\mathbf{z}_t\), we compute two text-conditioned noise estimates \(\boldsymbol{\epsilon}_{v}^{(t)}\) and
-              \(\boldsymbol{\epsilon}_{a}^{(t)}\). One for each modality. We then obtain a multimodal noise estimate
-              \(\tilde{\boldsymbol{\epsilon}}^{(t)}\) via weighted averaging, which we then use to denoise. 
-              Repeating this process iteratively results in a clean latent \(\mathbf{z}_0\). Finally, we decode this clean
-              latent to a spectrogram and convert it into a waveform using a pretrained vocoder.
-              As we only change the inference time procedure, our method is zero-shot, requiring no training or fine-tuning.
+              We use a camera's egomotion to 
+              supervise binaural sound localization models. We obtain the rota-
+              tion and translation of the camera using traditional methods from
+              multi-view geometry. We then train an audio model to predict
+              sound directions that are consistent with visual camera motions,
+              using a dataset that includes in-the-wild walking tours.
             </p>
 
             <div>
-              <video class="center-video" autoplay muted loop playsinline style="max-width: 700px; margin: 1em auto 0 auto;">
-                <source src="./static/videos/denoise.mp4" type="video/mp4">
-              </video>
+              <img src="./static/images/examples.jpg" class="center-img" style="max-width: 650px; margin-bottom: 30px;"/>
+              
               <p style="font-size: 9pt; width: 75%; margin: 0 auto;">
-                Iteratively denoising using both a spectrogram diffusion model 
-                and an image diffusion model. See <a href="#gallery">above</a> 
-                for videos with sound.
+                Visualizations of results in the internet walking tour videos (the YT-Stereo subset). We show our predictions and ground-truth annotations with angles and audio class labels.
               </p>
-            </div>
+            </div> 
 
           </div>
         </div>
@@ -234,10 +228,10 @@
   </section>
 
 
-  <section class="section" style="margin-top: -30px;">
+  <!-- <section class="section" style="margin-top: -30px;">
     <div class="container is-max-desktop">
       <!-- Concurrent Work. -->
-      <div class="columns is-centered">
+      <!-- <div class="columns is-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Related Links and Works</h2>
   
@@ -285,11 +279,11 @@
             
           </div>
         </div>
-      </div>
+      </div> -->
       <!--/ Concurrent Work. -->
   
     </div>
-  </section>
+  </section> -->
 
 
   <!-- <section class="section" id="BibTeX" style="margin-top: -30px;">
