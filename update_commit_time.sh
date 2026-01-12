@@ -6,7 +6,7 @@ LAST_COMMIT_TIME=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M:%S')
 # 文件路径和占位符
 HTML_FILE="$(dirname "$0")/index.html"
 PLACEHOLDER="Last updated: .*"
-NEW_TEXT="Last updated: $LAST_COMMIT_TIME"
+NEW_TEXT="Last updated: $LAST_COMMIT_TIME © 2025 Anna Min"
 
 # 检查占位符是否存在并替换
 if grep -q "$PLACEHOLDER" "$HTML_FILE"; then
