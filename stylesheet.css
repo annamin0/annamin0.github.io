@@ -179,13 +179,58 @@ h2 {
 
 .publication {
   display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
-  gap: 38px;
-  align-items: center;
-  padding: 32px 0;
-  border-bottom: 1px solid var(--rule);
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  margin-bottom: 45px;
+  align-items: start;
 }
 
+
+/* Publications with images */
+.publication:has(.publication-media) {
+  grid-template-columns: 180px minmax(0, 1fr);
+}
+
+
+.publication-media {
+  width: 180px;
+}
+
+
+.publication-media img {
+  width: 180px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+/* Publications without images */
+.publication:not(:has(.publication-media)) {
+  display: block;
+}
+
+
+.publication:not(:has(.publication-media)) .publication-copy {
+  width: 100%;
+  max-width: 900px;
+}
+
+
+/* Text styling */
+.publication-copy h3 {
+  margin-top: 0;
+}
+
+
+.publication-authors {
+  margin-bottom: 8px;
+}
+
+
+.publication-meta {
+  margin-bottom: 10px;
+}
 .publication-media {
   display: flex;
   align-items: center;
