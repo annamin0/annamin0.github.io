@@ -146,3 +146,12 @@ h2 { font-weight: 650; letter-spacing: -.025em; }
 .site-mark span { color: #e45a25; }
 .updates { border-left: 5px solid #e45a25; }
 .research > h3 { color: var(--link); }
+
+/* Highlight Anna while keeping all other author names black. */
+.publication-copy p.publication-authors,
+.publication-copy .publication-authors a {
+  color: #000;
+}
+.publication-copy .publication-authors .author-anna {
+  color: var(--link);
+}
