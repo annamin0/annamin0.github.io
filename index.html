@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Anna Min">
     <title>Anna Min</title>
-    <link rel="stylesheet" href="stylesheet.css?v=awards-readable-20261001">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
 
   <body>
-    <main class="page-shell">
-      <nav class="section-nav" aria-label="Page sections">
-        <a href="#research-heading">Research</a>
-        <a href="#updates-heading">Updates</a>
-        <a href="#awards-heading">Awards</a>
-        <a href="#service-heading">Service</a>
-      </nav>
+    <main class="page-shell" id="top">
+      <nav class="site-nav" aria-label="Main navigation"><a class="site-mark" href="#top">Anna Min<span aria-hidden="true">.</span></a><div class="section-links"><a href="#research-heading">Research</a><a href="#updates-heading">Updates</a><a href="#awards-heading">Awards</a></div></nav>
 
       <header class="profile">
         <div class="profile-copy">
+          <p class="eyebrow">Multimodal perception &amp; intelligent agents</p>
           <h1 class="name">
             Anna Min <span lang="zh-Hans">闵安娜</span>
           </h1>
@@ -29,9 +25,9 @@
             where I study computer science and statistics.
           </p>
 
-          <p>
-            <a href="mailto:anna.min1754@gmail.com">anna.min1754@gmail.com</a>
-            <span class="alternate-email">Academic email: <a href="mailto:annamin@csail.mit.edu">annamin@csail.mit.edu</a></span>
+          <p class="contact">
+            Email: anna.min1754@gmail.com
+            (if you prefer an edu email, annamin@csail.mit.edu)
           </p>
 
           <nav class="profile-links" aria-label="Profile links">
@@ -40,12 +36,12 @@
             </a>
             <a href="mailto:anna.min1754@gmail.com">Email</a>
             <a href="https://twitter.com/_AnnaMin">Twitter</a>
-            <a href="https://github.com/yangqing-20/">GitHub</a>
+            <a href="https://github.com/yangqing-20/">Github</a>
             <a href="https://linkedin.com/in/anna-min-a69963263">
-              LinkedIn
+              Linkedin
             </a>
             <a href="images/info/wechat_qr_code.png" target="_blank">
-              WeChat
+              Wechat
             </a>
           </nav>
         </div>
@@ -60,27 +56,27 @@
       </header>
 
 
-      <section class="content-section" aria-labelledby="updates-heading">
+      <section class="content-section updates" aria-labelledby="updates-heading">
         <h2 id="updates-heading">Recent Updates</h2>
 
-        <ul class="spaced-list updates-list">
+        <ul class="spaced-list">
           <li>
-            <strong>Feb. 2025:</strong><div>
+            <strong>Feb. 2025:</strong>
             One paper got accepted to CVPR 2025.
             See you in Nashville TN. Feel free to reach out!
-          </div></li>
+          </li>
 
           <li>
-            <strong>Sep. 2024:</strong><div>
+            <strong>Sep. 2024:</strong>
             I gave a talk at MIT ML Tea Time titled
             "Multi-sensory Perception from Top to Down."
             <a href="https://calendar.csail.mit.edu/events/285913" target="_blank">
               [link]
             </a>
-          </div></li>
+          </li>
 
           <li>
-            <strong>Feb. 2024:</strong><div>
+            <strong>Feb. 2024:</strong>
             The feature for multi-modal generation based on the algorithm
             and demo that I designed gained over
             <a href="https://twitter.com/pika_labs/status/1766554610188095642">
@@ -90,7 +86,7 @@
             <a href="https://pika.art/" target="_blank">
               Pika Labs
             </a>.
-          </div></li>
+          </li>
         </ul>
       </section>
 
@@ -109,6 +105,40 @@
         
         
         <h3>Selected Publications</h3>
+
+        <article class="publication">
+          <div class="publication-copy">
+            <h3>SEDM: Selective Self-Evolving Distributed Memory for Agents</h3>
+            <p class="publication-authors">
+              Yichen Liu*, <strong>Anna Min*</strong>, Yinzhi Wang, Yuhang Yao,
+              Yichen Han, Rui Zhang, Jiantao He, Zhiheng Li, Yingying Qi,
+              Haoran Xu, Zhimin Ding, Yuxin Tang, Qi You, Lynn Ai, Eric Yang,
+              Lewei He, Tianyu Shi
+            </p>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="publication-copy">
+            <h3>MERA: Model Evolution and Routing with Skill Adaptation for Agentic Systems at Scale</h3>
+            <p class="publication-authors">
+              Yuhang Yao*, <strong>Anna Min*</strong>, Tianyu Shi
+            </p>
+            <p class="publication-meta">In submission to ICLR 2027</p>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="publication-copy">
+            <h3>See, Infer, Intervene: Proactive World Modeling for Goal-Oriented Social Intelligence</h3>
+            <p class="publication-authors">
+              <strong>Anna Min*</strong>, Honghui Zhang*, Chenmeinian Guo,
+              Yichen Yu, Guanyu Liu, Yujia Zhang, Yongming Qin, Chongguo Song,
+              Mengyue Yang, Lei Yu, Tianyu Shi
+            </p>
+            <p class="publication-meta">NeurIPS@VLM4RWD / In submission to ICLR 2027</p>
+          </div>
+        </article>
         
         
         <!-- CVPR 2025 -->
@@ -526,13 +556,27 @@
   </h2>
 
 
-  <ul class="spaced-list awards-list">
-    <li><span class="award-year">2025</span><div><strong class="award-title">Bright Lite Scholarship</strong><p class="award-detail">Finalist</p></div></li>
-    <li><span class="award-year">2024</span><div><strong class="award-title">National Science Fund for Distinguished Undergraduate Researchers</strong><p class="award-detail">130 undergraduate STEM researchers selected from across China, $50000 · National Natural Science Foundation of China (NSFC)</p></div></li>
-    <li><span class="award-year">2023</span><div><strong class="award-title">Tsinghua University Academic Excellence Award</strong><p class="award-detail">2/103</p></div></li>
-    <li><span class="award-year">2022–2024</span><div><strong class="award-title">Tsinghua University Research Excellence Award</strong><p class="award-detail">2/103</p></div></li>
-    <li><span class="award-year">2022</span><div><strong class="award-title">Spark Innovative Talent Cultivation Program</strong><p class="award-detail">Top 1%, 50/3900 undergraduates in Tsinghua for research performance</p></div></li>
-    <li><span class="award-year">2021</span><div><strong class="award-title">Meritorious Winner of Mathematical Contest in Modeling</strong><p class="award-detail">Top 0.18%, ranked 89th/49424</p></div></li>
+  <ul class="spaced-list">
+    <li> 2025, Bright Lite Scholarship, Finalist</li>
+    <li> 2024, National Science Fund for Distinguished Undergraduate Researchers (130 undergraduate STEM researchers selected from across China, $50000), National Natural Science Foundation of China (NSFC) </li>
+    <li>
+      2023, Tsinghua University Academic Excellence Award (2/103)
+    </li>
+
+    <li>
+      2022-2024, Tsinghua University Research Excellence Award (2/103)
+    </li>
+
+    <li>
+      2022, Spark Innovative Talent Cultivation Program
+      (top 1%, 50/3900 undergraduates in Tsinghua for research performance)
+    </li>
+
+    <li>
+      2021, Meritorious Winner of Mathematical Contest in Modeling
+      (top 0.18%, ranked 89th/49424)
+    </li>
+
   </ul>
 
 </section>
@@ -600,7 +644,7 @@
 
   <p id="update-time">
 
-    Last updated: 2026-09-28 19:05:09 © 2025 Anna Min
+    Last updated: 2026-10-07 12:49:15 © 2025 Anna Min
 
   </p>
 
