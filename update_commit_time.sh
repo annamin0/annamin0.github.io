@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 获取最近一次提交的时间
-LAST_COMMIT_TIME=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M:%S')
+LAST_COMMIT_TIME=$(git log -1 --format=%cd --date=format:'%Y-%m-%d %H:%M')
 
 # 文件路径和占位符
 HTML_FILE="$(dirname "$0")/index.html"
