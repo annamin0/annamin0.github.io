@@ -155,3 +155,44 @@ h2 { font-weight: 650; letter-spacing: -.025em; }
 .publication-copy .publication-authors .author-anna {
   color: var(--link);
 }
+
+/* Floating section navigation, inspired by peterljq.github.io. */
+html { scroll-padding-top: 110px; }
+.site-nav {
+  position: sticky;
+  top: 14px;
+  z-index: 50;
+  margin-top: 14px;
+  padding: 14px 24px;
+  gap: 24px;
+  flex-wrap: nowrap;
+  background: rgba(255, 252, 247, .93);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border: 1px solid rgba(24, 35, 63, .12);
+  border-radius: 16px;
+  box-shadow: 0 2px 5px #18233f05, 0 8px 28px #18233f0d;
+}
+.site-mark { flex-shrink: 0; white-space: nowrap; }
+.site-nav .section-links { gap: 22px; flex-wrap: nowrap; min-width: 0; }
+.site-nav .section-links a {
+  flex-shrink: 0;
+  padding: 8px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  border-bottom: 2px solid transparent;
+}
+.site-nav .section-links a:hover,
+.site-nav .section-links a:focus-visible {
+  color: var(--link);
+  border-bottom-color: var(--link);
+  text-decoration: none;
+}
+@media (max-width: 1000px) {
+  .site-nav { flex-direction: column; align-items: stretch; gap: 4px; padding: 12px 20px; }
+  .site-nav .section-links { overflow-x: auto; padding: 4px; gap: 22px; scrollbar-width: thin; }
+  html { scroll-padding-top: 156px; }
+}
+@media (max-width: 500px) {
+  .site-nav { top: 8px; margin-top: 8px; padding: 10px 14px; border-radius: 14px; }
+}
